@@ -15,6 +15,7 @@ void Quick_sort(int a[],int start,int end){
     Quick_sort(a,start,pivot-1);
     Quick_sort(a,pivot+1,end);
 }
+
 int main(){
     int a[]={72,73,83,92,47,56,10,24,356,67,8728,12};
     int size=sizeof(a)/sizeof(a[0]);
