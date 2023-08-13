@@ -26,8 +26,8 @@ void UnSetBit(int n,int i){
     // so 9 =>           00001001
     // ~(1<<i) =>        11110111  here, 1<<i => 00001000 ~ inverse it so,  ~(1<<i) => 11110111
     // ---------------------------
-    // and operation     00011001 which is 25
-    BinaryToDecimal((n&(~(1<<i))));
+    // and operation     00000001 which is 1
+    BinaryToDecimal((n&(~(1<<i)))); // basically, here we are snding 1 => BinaryToDecimal(1)
 }
 int main(){
 
