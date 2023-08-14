@@ -1,0 +1,1 @@
+if (sum > 12) break;
