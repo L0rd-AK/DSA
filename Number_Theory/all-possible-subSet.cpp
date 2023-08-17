@@ -3,7 +3,7 @@
 using namespace std;
 #define ll long long int
 int main(){
-	ll a[]={1,2,3,4,5,6,7,8};//you can change the array as you desire
+	ll a[]={1,2,3,4};//you can change the array as you desire
 
 	ll size=sizeof(a)/sizeof(a[0]);
 	int n=pow(2,size)-1;
