@@ -10,9 +10,9 @@ void insertion_sort(int a[], int n)
 {
     for (int i = 0; i < n - 1; i++)
     {
-        for (int j = i; j>=0; j--)
+        for (int j = i-1; j>=0; j--)
         {
-            if (a[j] < a[i]) swap(&a[i],&a[j]);
+            if (a[j] > a[j+1]) swap(&a[j],&a[j+1]);
         }
 
     }
@@ -20,7 +20,7 @@ void insertion_sort(int a[], int n)
 }
 int main()
 {
-    int a[] = {2,4,7,1,9,0,3,5,6,8};
+    int a[] = {2,4,7,-3,1,9,0,3,5,6,8};
     int size =sizeof(a)/sizeof(a[0]);
     insertion_sort(a, size);
 
