@@ -21,11 +21,11 @@ int main() {
       }
     }
   }cout<<"Minimum number of coins: "<<dp[n][amount]<<endl;
-  // for(int i=0;i<=n;i++){
-  //   for(int j=0;j<=amount;j++){
-  //     printf("(%d,%d)=>[%d] ",i,j,dp[i][j]);
-  //   }cout<<endl;
-  // }
+  for(int i=0;i<=n;i++){
+    for(int j=0;j<=amount;j++){
+      printf("%d ",dp[i][j]);
+    }cout<<endl;
+  }
  
 
   return 0;
