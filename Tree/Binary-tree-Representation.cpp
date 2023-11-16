@@ -16,13 +16,14 @@ node *createNode(int data) {
 }
 
 int main() {
-    root=createNode(1);
+    // level-0
+    root=createNode(1);//root
     root->Left=createNode(2);
     root->Right=createNode(3);
-
+    // level-1
     root->Left->Left=createNode(4);
     root->Left->Right=createNode(5);
-
+    // level-2
     root->Right->Left=createNode(6);
     root->Right->Right=createNode(7);
 
