@@ -15,18 +15,6 @@ node *createNode(int data) {
     return temp;
 }
 
-void printTree(node *root) {
-    if (root == NULL) {
-        return;
-    }
-    
-    printTree(root->Left);
-    printf("%d ", root->data);
-    printTree(root->Right);
-    
-    
-}
-
 int main() {
     root=createNode(1);
     root->Left=createNode(2);
@@ -38,7 +26,5 @@ int main() {
     root->Right->Left=createNode(6);
     root->Right->Right=createNode(7);
 
-    printf("Binary Tree (In-order Traversal): \n");
-    printTree(root);
     return 0;
 }
