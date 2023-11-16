@@ -19,7 +19,7 @@ void printTree(node *root) {
     if (root == NULL) {
         return;
     }
-    
+    // In-order: left->root->right
     printTree(root->Left);
     printf("%d ", root->data);
     printTree(root->Right);
@@ -28,15 +28,16 @@ void printTree(node *root) {
 }
 
 int main() {
-    
+
      // level-0
     root=createNode(1);//root
+    // level-1
     root->Left=createNode(2);
     root->Right=createNode(3);
-    // level-1
+    // level-2
     root->Left->Left=createNode(4);
     root->Left->Right=createNode(5);
-    // level-2
+
     root->Right->Left=createNode(6);
     root->Right->Right=createNode(7);
 
