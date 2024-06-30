@@ -19,7 +19,7 @@ void printTree(node *root) {
     if (root == NULL) {
         return;
     }
-    // P0st-order: left->right->root
+    //P0st-order: left->right->root
     printTree(root->Left);
     printTree(root->Right);
     printf("%d ", root->data);

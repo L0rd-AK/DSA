@@ -28,7 +28,6 @@ void DFS(int s, int n,vector<bool>& vis,vector<vector<int>>& dfs,vector<vector<i
   SSC.push_back(Current_ssc);
   
 }
-
 int main(){
     
     	int V, E;

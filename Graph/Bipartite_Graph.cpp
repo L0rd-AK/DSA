@@ -11,7 +11,6 @@ bool is_Bipartite(int s,int n){
     q.push(s);
     colr[s]=1;
     while(!q.empty()){
-
         int temp=q.front();
         int currentColor=colr[temp];
         q.pop();
